@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">This is a form that you must submit. Thank you for doing it!</p>
+    <form method="post" id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Enter Name:<input id="name" type="text" placeholder="Enter your Name"required/></label><br>
+      <label id="email-label" for="email">Enter email:<input id="email" type="email" placeholder="someone@example.com"required/></label><br>
+      <label id="number-label" for="age">Enter your age:<input id="number" type="number" min="18" max ="120" placeholder="XX"/></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Who told you about this site?
+        <select id="dropdown">
+          <option value="0" disabled>Select one</option>
+          <option value="1">From a friend</option>
+          <option value="2">Website</option>
+          <option value="3">Coworker</option>
+          <option value="4">Other</option>
+        </select>
+        </label>
+    </fieldset>
+    <fieldset>
+      <label for="radio1">Would you recommend our product to a friend?</label><br>
+      <input type="radio" name="options" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" name="options" value="no">
+       <label for="no">No</label><br>
+      <label for="improve">
+        What would you like to improve?
+      </label>
+      <span class="checkbox-label">(Check all that apply)</span><br>
+      <label for="price">
+      <input id = "price" value="price" type = "checkbox" class = "checkbox">Price
+      </label><br>
+      <label for="size">
+      <input id = "size" value = "size" type = "checkbox" class = "checkbox">Size
+      </label><br>
+      <label for="other">
+      <input id = "other" value = "other" type = "checkbox" class = "checkbox">Other
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="comments">
+        Any comments and concerns?
+        <br><textarea id="comments" name="comments" rows="3" cols="30" placeholder = "Final comments..."></textarea>
+      </label>
+    </fieldset>
+    <input id="submit"type="submit" value = "Submit"/>
+    </form>
+  </body>
+</html>
